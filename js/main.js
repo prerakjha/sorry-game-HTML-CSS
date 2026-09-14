@@ -41,5 +41,12 @@ document.getElementById("apology-button").addEventListener("click", () => {
 ========================= */
 
 document.getElementById("final-button").addEventListener("click", () => {
-  alert("Congratulations. You have officially been forgiven. Probably.");
+  alert("Congratulations. Popcorn has officially been forgiven. Probably. Hope So. Please God.");
+});
+
+const noButton = document.querySelector(".no-button");
+
+noButton.addEventListener("click", () => {
+  console.log("NO BUTTON CLICKED");
+  noButton.classList.add("falling");
 });

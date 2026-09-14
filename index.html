@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Quest: De-Anger Her</title>
+    <title>Quest: Plushie</title>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -16,13 +16,16 @@
 
     <section id="start-screen" class="screen active">
       <div class="card">
-        <p class="eyebrow">⚠️ QUEST DETECTED</p>
+        <p class="eyebrow">~~~ HELLO PLUSHIEEE ~~~</p>
 
-        <h1>De-Anger Her</h1>
+        <h1>Help PopCoRn !</h1>
 
-        <p class="subtitle">Someone is angry with you.</p>
+        <p class="subtitle">Someone is angry with me.</p>
 
-        <p>Your mission is simple: survive long enough to earn forgiveness.</p>
+        <p>
+          Your mission is simple:<br />Collect hearts 💗 enough to lower the
+          rage 😡.
+        </p>
 
         <button id="start-button">START QUEST</button>
       </div>
@@ -34,7 +37,6 @@
 
     <section id="game-screen" class="screen">
       <div class="game-header">
-
         <div class="effect-hints">
           <span class="heart-hint">💗 <span class="down-arrow">↓</span></span>
 
@@ -48,11 +50,8 @@
             <div id="rage-bar"></div>
           </div>
 
-          <span class="rage-value">
-            <span id="rage">100</span>%
-          </span>
+          <span class="rage-value"> <span id="rage">100</span>% </span>
         </div>
-
       </div>
 
       <div id="game-area">
@@ -63,7 +62,10 @@
         </div>
       </div>
 
-      <p class="controls">← → or A D to move</p>
+      <p class="controls">
+        ←&nbsp;&nbsp;→ or A&nbsp;&nbsp;D to move&nbsp;&nbsp;&nbsp;&nbsp;SPACE to
+        meowww
+      </p>
     </section>
 
     <!-- =========================
@@ -72,9 +74,9 @@
 
     <section id="game-over-screen" class="screen">
       <div class="card">
-        <h1>💀 You fucked up.</h1>
+        <h1>💀 Goodness Gracious!</h1>
 
-        <p>The anger was too powerful.</p>
+        <p>The anger was too powerful for Popcorn.</p>
 
         <button id="retry-button">TRY AGAIN</button>
       </div>
@@ -88,11 +90,13 @@
       <div class="card">
         <p class="eyebrow">🏆 QUEST COMPLETE</p>
 
-        <h1>Anger: 0%</h1>
+        <h1>OMG, THANKS PLUSHIEEE</h1>
 
-        <p>You survived.</p>
+        <p>You made it!</p>
 
-        <p>Unfortunately, forgiveness is still controlled by the final boss.</p>
+        <p>
+          Unfortunately, forgiveness is still to be earned by the final boss.
+        </p>
 
         <button id="apology-button">FACE THE FINAL BOSS</button>
       </div>
@@ -106,16 +110,22 @@
       <div class="card">
         <p class="eyebrow">💌 FINAL MESSAGE</p>
 
-        <h1>Okay, hear me out...</h1>
+        <h1>Okay, please hear me out...</h1>
 
         <p id="apology-text">
-          I made you a stupid little game because apparently I don't know how to
-          apologize normally.
+          I'm really sorry for doubting you. It's not fun to me in any way. I
+          just didn't want anything to stay in my brain. So, I directly
+          confronted you and no one else, because I trust YOU! You getting me?
+          And if you do care about what I think about you so much, then it's
+          apparent that you care about me too. I see that and I am sorry. Maan
+          jaa naa yaar &lt;3
         </p>
 
         <p>I'm sorry. ❤️</p>
-
-        <button id="final-button">Accept my apology? 👀</button>
+        <div class="button-row">
+          <button id="final-button">Okay, I forgive you 👀</button>
+          <button class="no-button">Nope, I'm still mad 😒</button>
+        </div>
       </div>
     </section>
 

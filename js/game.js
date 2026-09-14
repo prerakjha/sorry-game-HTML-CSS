@@ -33,6 +33,7 @@ const AUDIO_FILES = {
   victory: "assets/audio/victory.mp3",
   gameOver: "assets/audio/game_over.mp3",
   catWalk: "assets/audio/cat_walk.mp3",
+  meow: "assets/audio/meow.mp3"
 };
 
 /*
@@ -76,6 +77,12 @@ const SOUND_SETTINGS = {
   },
 
   catWalk: {
+    start: 0,
+    duration: 1,
+    volume: 0.25,
+  },
+
+  meow: {
     start: 0,
     duration: 1,
     volume: 0.25,
@@ -298,6 +305,11 @@ let spawnTimer = 0;
 
 document.addEventListener("keydown", (event) => {
   if (!gameRunning) return;
+
+  if (event.code === "Space" && !event.repeat && gameRunning) {
+    playSound("meow");
+    event.preventDefault();
+  }
 
   if (
     event.code === "KeyA" ||
